@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,300&display=swap');
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+    background: #1D095C;
+    overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color: #1D095C;
+}
+
+
+.nike {
+	color: white;
+}
+
+header {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px 80px;
+
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 800;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.hero {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60%;
+      background-image:linear-gradient(rgba(4,9,30,0.4), rgba(4,9,30,0.8)),url("./assets/coolbg.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    padding: 80px;
+    padding-top: 140px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 30px;
+	color: white;
+}
+
+.hero h1 > div  {
+    position: relative;
+    height: 80px;
+    overflow: hidden;
+}
+
+.hero h1 > div  span {
+    position: absolute;
+}
+
+.hero p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    position: relative;
+    margin-bottom: 50px;
+	color: white;
+}
+
+.hero p > div  {
+    position: relative;
+    height: 28px;
+    overflow: hidden;
+}
+
+.hero p > div  span {
+    position: absolute;
+}
+
+.hero .btn {
+    border: none;
+    height: 50px;
+    width: 150px;
+    border-radius: 6px;
+    font-size: 16px;
+    letter-spacing: .3px;
+    line-height: 26px;
+    color: #fff;
+    cursor: pointer;
+    background: #1D095C;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0px 100%);
+}
+
+.hero .btn:hover {
+	color: #1D095C;
+	background-color: white;
+	border: 2px solid #1D095C;
+	font-weight: 500;
+}
+
+.hero .btn i {
+    font-size: 20px;
+    margin-left: 3px;
+}
+
+.hero .btn-dropdown {
+    margin-right: 20px;
+}
+
+.hero .btn-cart {
+
+}
+
+figure {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-5%, -45%) rotate(0deg);
+    transform-origin: center;
+}
+
+figure img {
+    object-fit: cover;
+    width: 90%;
+    height: 90%;
+}
+
+figure.float img {
+    animation: float 6s ease-in-out infinite;
+}
+
+#heading {
+    font-size: 140px;
+    font-weight: 800;
+    color: #006CAC;
+    display: flex;
+    opacity: .5;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    writing-mode: vertical-rl;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+#heading > div {
+    width: 165px;
+    position: relative;
+    text-align: center;
+    height: 105px;
+}
+
+#heading span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0px 100%);
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
+@media screen and (max-width: 600px)  {
+	.hero h1 {
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 30px;
+    color: white;
+}
+}
